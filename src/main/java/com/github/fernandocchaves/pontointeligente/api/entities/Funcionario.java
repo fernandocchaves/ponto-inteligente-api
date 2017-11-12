@@ -41,7 +41,7 @@ public class Funcionario implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "nome", nullable = false)
+    @Column(name = "nome", nullable = true)
     public String getNome() {
         return nome;
     }
@@ -50,7 +50,7 @@ public class Funcionario implements Serializable {
         this.nome = nome;
     }
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = true)
     public String getEmail() {
         return email;
     }
@@ -59,7 +59,7 @@ public class Funcionario implements Serializable {
         this.email = email;
     }
 
-    @Column(name = "cpf", nullable = false)
+    @Column(name = "cpf", nullable = true)
     public String getCpf() {
         return cpf;
     }
@@ -111,7 +111,7 @@ public class Funcionario implements Serializable {
     }
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "perfil", nullable = false)
+    @Column(name = "perfil", nullable = true)
     public PerfilEnum getPerfil() {
         return perfil;
     }
@@ -138,7 +138,7 @@ public class Funcionario implements Serializable {
         this.dataAtualizacao = dataAtualizacao;
     }
 
-    @Column(name = "senha", nullable = false)
+    @Column(name = "senha", nullable = true)
     public String getSenha() {
         return senha;
     }
